@@ -26,7 +26,6 @@ def analyze(request):
             'analyzed_text': analyzed
         }
         dj_text = analyzed
-        # return render(request, 'index.html', params)
 
     if capital_text == "on":
         analyzed = ""
@@ -39,7 +38,6 @@ def analyze(request):
             'analyzed_text': analyzed
         }
         dj_text = analyzed
-        # return render(request, 'index.html', params)
 
     if newline_remove == "on":
         analyzed = ""
@@ -51,7 +49,6 @@ def analyze(request):
             'analyzed_text': analyzed
         }
         dj_text = analyzed
-        # return render(request, 'index.html', params)
 
     if character_counter == 'on':
         count_num = 0
@@ -62,7 +59,5 @@ def analyze(request):
             'purpose': 'Counting Characters',
             'analyzed_text': count_num
         }
-        dj_text = analyzed
-        # return render(request, 'index.html', params)
 
     return render(request, 'index.html', params)
